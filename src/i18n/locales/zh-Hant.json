@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Koox | 聰明用餐，越吃越省",
+    "description": "提升每一次用餐體驗。Koox 以即時現金回饋與 AI 驅動的省錢方案，在你熟悉的外送平台上把每一餐都變成有回饋的旅程。"
+  },
+  "nav": {
+    "features": "功能亮點",
+    "howItWorks": "如何使用",
+    "download": "立即下載"
+  },
+  "a11y": {
+    "openMenu": "開啟選單",
+    "closeMenu": "關閉選單",
+    "language": "語言",
+    "share": "分享"
+  },
+  "hero": {
+    "badge": "邊點邊吃邊回饋",
+    "titleBefore": "聰明用餐，",
+    "titleHighlight": "越吃越省",
+    "subtitle": "提升每一次用餐體驗。Koox 把每一餐都變成可累積的回饋旅程，以即時現金回饋與 AI 省錢建議，串連你常用的外送平台。",
+    "imgAlt": "Koox 應用程式介面預覽",
+    "cashbackReceived": "回饋到帳",
+    "cashbackAmount": "+¥12.40"
+  },
+  "steps": {
+    "heading": "如何使用",
+    "step1": {
+      "title": "瀏覽並選擇",
+      "body": "透過編輯精選榜單，發掘在地人氣與熱門店家。"
+    },
+    "step2": {
+      "title": "於 Uber Eats 下單",
+      "body": "在合作夥伴平台完成結帳，我們同步追蹤你的訂單與回饋。"
+    },
+    "step3": {
+      "title": "領取回饋",
+      "body": "回饋即時進入 Koox 錢包，隨時提領至銀行帳戶。"
+    },
+    "step4": {
+      "title": "提交與驗證",
+      "body": "上傳收據或訂單證明，經 AI 驗證後，回饋即時入帳至 Koox 錢包。"
+    }
+  },
+  "features": {
+    "aiTitle": "AI 管家：即時比價",
+    "aiBody": "別再付冤枉錢。智能引擎在幾秒內掃描多個外送平台，為你找出最低費用與最高回饋組合。",
+    "aiConciergeAlt1": "Koox 智能規劃",
+    "aiConciergeAlt2": "Koox — 跨平台比價優化訂單",
+    "aiConciergeAlt3": "Koox 管家 — 熱門趨勢",
+    "plannerTitle": "智能規劃：三日回饋路線圖",
+    "plannerBody": "依高倍回饋時段，為你個人化推薦接下來幾天最值得下單的餐廳與時段。",
+    "cardTonight": "今晚",
+    "cardTomorrow": "明日",
+    "restaurant1": "Sushi Zen",
+    "restaurant2": "義麵工坊",
+    "cashback15": "返 15%",
+    "cashback10": "返 10%"
+  },
+  "footer": {
+    "rights": "保留所有權利。",
+    "privacy": "隱私權政策",
+    "terms": "服務條款",
+    "cookie": "Cookie 政策"
+  },
+  "stores": {
+    "appStore": "App Store",
+    "googlePlay": "Google Play 商店"
+  }
+}

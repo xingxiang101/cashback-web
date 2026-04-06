@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "Koox | The smartest way to dine & save",
+    "description": "Elevate your dining experience. Koox turns every meal into a rewarding journey with real-time cashback and AI-powered savings across your favorite delivery apps."
+  },
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How it works",
+    "download": "Download"
+  },
+  "a11y": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "share": "Share"
+  },
+  "hero": {
+    "badge": "Earn cashback on every order",
+    "titleBefore": "The smartest way to ",
+    "titleHighlight": "Dine & Save",
+    "subtitle": "Elevate your dining experience. Koox turns every meal into a rewarding journey with real-time cashback and AI-powered savings across your favorite delivery apps.",
+    "imgAlt": "Koox app preview",
+    "cashbackReceived": "Reward received",
+    "cashbackAmount": "+¥12.40"
+  },
+  "steps": {
+    "heading": "How it works",
+    "step1": {
+      "title": "Browse & choose",
+      "body": "Discover curated local favorites and trending hotspots through our editor-selected collections."
+    },
+    "step2": {
+      "title": "Order on Uber Eats",
+      "body": "Complete your checkout seamlessly through our integrated partners while we track your rewards."
+    },
+    "step3": {
+      "title": "Earn cashback",
+      "body": "Watch your earnings grow instantly in your Koox wallet. Withdraw anytime to your bank."
+    },
+    "step4": {
+      "title": "Submit & verify",
+      "body": "Upload your receipt or order proof. Once verified by our AI, your cashback is instantly credited to your Koox wallet."
+    }
+  },
+  "features": {
+    "aiTitle": "AI Concierge: Real-time price comparison",
+    "aiBody": "Stop overpaying. Our intelligent engine scans multiple delivery platforms to find you the lowest fees and highest rewards in seconds.",
+    "aiConciergeAlt1": "Koox Smart Planner",
+    "aiConciergeAlt2": "Koox — optimizing your order across platforms",
+    "aiConciergeAlt3": "Koox Concierge — trend tracker",
+    "plannerTitle": "Smart Planner: Your 3-day reward roadmap",
+    "plannerBody": "Maximize your earnings with personalized dining suggestions based on upcoming high-multiplier reward periods.",
+    "cardTonight": "Tonight",
+    "cardTomorrow": "Tomorrow",
+    "restaurant1": "Sushi Zen",
+    "restaurant2": "Pasta & Co",
+    "cashback15": "15% back",
+    "cashback10": "10% back"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookie": "Cookie Policy"
+  },
+  "stores": {
+    "appStore": "App Store",
+    "googlePlay": "Google Play"
+  }
+}
