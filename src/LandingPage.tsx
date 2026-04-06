@@ -198,7 +198,7 @@ export function LandingPage() {
                   </picture>
                 </div>
               </div>
-              <div className="glass-card absolute left-3 top-1/4 flex animate-bounce items-center gap-3 rounded-full px-4 py-3 shadow-xl sm:-left-6 sm:px-6 sm:py-4">
+              <div className="glass-card absolute -right-2 top-[22%] z-20 flex animate-bounce items-center gap-3 rounded-full px-4 py-3 shadow-xl sm:-right-10 sm:px-6 sm:py-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-tertiary-fixed">
                   <span className="material-symbols-outlined text-on-tertiary-fixed">
                     payments
