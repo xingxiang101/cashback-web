@@ -1,6 +1,7 @@
 import { useEffect, useState, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { LanguageToggle } from "./components/LanguageToggle";
+import { applyWebSeo } from "./seo";
 
 const SHOWCASE_WEBP = "/showcase-smart-planner.webp";
 const SHOWCASE_JPG = "/showcase-smart-planner.jpg";
@@ -40,9 +41,12 @@ export function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    document.title = t("meta.title");
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", t("meta.description"));
+    const locale = i18n.language === "zh-Hant" ? "zh-Hant" : "en";
+    applyWebSeo({
+      title: t("meta.title"),
+      description: t("meta.description"),
+      locale,
+    });
   }, [t, i18n.language]);
 
   return (
@@ -65,6 +69,12 @@ export function LandingPage() {
               href="#how-it-works"
             >
               {t("nav.howItWorks")}
+            </a>
+            <a
+              className="font-medium text-slate-600 transition-colors duration-300 hover:text-violet-500 dark:text-slate-400"
+              href="#merchant"
+            >
+              {t("nav.forMerchants")}
             </a>
           </div>
 
@@ -114,6 +124,13 @@ export function LandingPage() {
                 onClick={() => setMenuOpen(false)}
               >
                 {t("nav.howItWorks")}
+              </a>
+              <a
+                href="#merchant"
+                className="font-medium text-on-surface"
+                onClick={() => setMenuOpen(false)}
+              >
+                {t("nav.forMerchants")}
               </a>
               <button
                 type="button"
@@ -357,6 +374,82 @@ export function LandingPage() {
                       <span className="text-xs font-black text-on-surface-variant">
                         {t("features.cashback10")}
                       </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="merchant" className="px-4 py-24 sm:px-6 sm:py-28 lg:py-32">
+          <div className="mx-auto max-w-7xl">
+            <div className="relative flex flex-col items-center justify-between gap-12 overflow-hidden rounded-[2rem] bg-inverse-surface p-8 sm:rounded-[3rem] md:p-16 lg:flex-row">
+              <div className="pointer-events-none absolute left-0 top-0 h-full w-full bg-gradient-to-br from-primary/10 to-transparent" />
+              <div className="relative z-10 flex-1">
+                <div className="mb-8 inline-flex items-center gap-2 rounded-full bg-white/12 px-4 py-1.5 text-white ring-1 ring-white/15">
+                  <span className="font-label text-sm font-bold uppercase tracking-wider">
+                    {t("merchant.badge")}
+                  </span>
+                </div>
+                <h2 className="mb-8 font-headline text-4xl font-black leading-tight text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.35)] md:text-6xl">
+                  <span className="block">{t("merchant.titleLine1")}</span>
+                  <span className="block">
+                    {t("merchant.titleLine2Start")}
+                    <span className="text-primary-fixed [text-shadow:none]">Koox</span>
+                    {t("merchant.titleLine2End")}
+                  </span>
+                </h2>
+                <p className="mb-12 max-w-xl text-lg leading-relaxed text-white/95 [text-shadow:0_1px_2px_rgba(0,0,0,0.35)] md:text-xl">
+                  {t("merchant.body")}
+                </p>
+                <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center">
+                  <a
+                    href={`tel:${t("merchant.phoneTel")}`}
+                    className="flex items-center gap-3 rounded-full bg-primary px-8 py-4 font-bold text-on-primary shadow-xl shadow-primary/20 transition-all hover:bg-primary-dim active:scale-95"
+                    aria-label={t("a11y.callMerchant")}
+                  >
+                    <span className="material-symbols-outlined">call</span>
+                    <span>{t("merchant.phoneDisplay")}</span>
+                  </a>
+                  <p className="font-medium text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.35)]">
+                    {t("merchant.contactHint")}
+                  </p>
+                </div>
+              </div>
+              <div className="relative z-10 w-full flex-1 lg:w-auto">
+                <div className="rounded-[2.5rem] border border-white/10 border-t-white/40 bg-white/5 p-8 backdrop-blur-md">
+                  <div className="mb-8 flex items-center gap-4">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-tertiary-fixed">
+                      <span className="material-symbols-outlined text-on-tertiary-fixed">trending_up</span>
+                    </div>
+                    <div>
+                      <p className="text-xl font-bold text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.35)]">
+                        {t("merchant.dashboardTitle")}
+                      </p>
+                      <p className="mt-0.5 text-sm font-medium text-white/90 [text-shadow:0_1px_2px_rgba(0,0,0,0.35)]">
+                        {t("merchant.dashboardSubtitle")}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="space-y-6">
+                    <div>
+                      <div className="flex justify-between text-xs font-bold text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.35)]">
+                        <span className="uppercase tracking-wide">{t("merchant.statNewCustomers")}</span>
+                        <span className="tabular-nums">{t("merchant.statNewCustomersValue")}</span>
+                      </div>
+                      <div className="mt-2 h-3 w-full overflow-hidden rounded-full bg-white/20">
+                        <div className="h-full w-[75%] rounded-full bg-tertiary-fixed" />
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex justify-between text-xs font-bold text-white [text-shadow:0_1px_2px_rgba(0,0,0,0.35)]">
+                        <span className="uppercase tracking-wide">{t("merchant.statRepeatOrders")}</span>
+                        <span className="tabular-nums">{t("merchant.statRepeatOrdersValue")}</span>
+                      </div>
+                      <div className="mt-2 h-3 w-full overflow-hidden rounded-full bg-white/20">
+                        <div className="h-full w-[60%] rounded-full bg-tertiary-fixed" />
+                      </div>
                     </div>
                   </div>
                 </div>

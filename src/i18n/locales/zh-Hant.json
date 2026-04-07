@@ -6,13 +6,15 @@
   "nav": {
     "features": "功能亮點",
     "howItWorks": "如何使用",
+    "forMerchants": "商家合作",
     "download": "立即下載"
   },
   "a11y": {
     "openMenu": "開啟選單",
     "closeMenu": "關閉選單",
     "language": "語言",
-    "share": "分享"
+    "share": "分享",
+    "callMerchant": "致電商務合作專線"
   },
   "hero": {
     "badge": "邊點邊吃邊回饋",
@@ -30,8 +32,8 @@
       "body": "透過編輯精選榜單，發掘在地人氣與熱門店家。"
     },
     "step2": {
-      "title": "於 Uber Eats 下單",
-      "body": "在合作夥伴平台完成結帳，我們同步追蹤你的訂單與回饋。"
+      "title": "於 Keeta、foodpanda 下單",
+      "body": "在 Keeta 或 foodpanda 完成結帳，我們同步追蹤你的訂單與回饋。"
     },
     "step3": {
       "title": "領取回饋",
@@ -56,6 +58,22 @@
     "restaurant2": "義麵工坊",
     "cashback15": "返 15%",
     "cashback10": "返 10%"
+  },
+  "merchant": {
+    "badge": "加入商家合作",
+    "titleLine1": "拓展你的業務",
+    "titleLine2Start": "與 ",
+    "titleLine2End": " 一起成長",
+    "body": "讓餐廳曝光在數以千計的用戶面前，觸及新客、提升訂單量，並透過高轉換的回饋平台放大投資報酬。",
+    "phoneDisplay": "852 5988 5181",
+    "phoneTel": "+85259885181",
+    "contactHint": "立即聯絡商務合作團隊",
+    "dashboardTitle": "商家後台",
+    "dashboardSubtitle": "即時掌握營運表現",
+    "statNewCustomers": "新客",
+    "statNewCustomersValue": "+75%",
+    "statRepeatOrders": "回購訂單",
+    "statRepeatOrdersValue": "+60%"
   },
   "footer": {
     "rights": "保留所有權利。",

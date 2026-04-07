@@ -6,16 +6,18 @@
   "nav": {
     "features": "Features",
     "howItWorks": "How it works",
+    "forMerchants": "For merchants",
     "download": "Download"
   },
   "a11y": {
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "language": "Language",
-    "share": "Share"
+    "share": "Share",
+    "callMerchant": "Call merchant partnership"
   },
   "hero": {
-    "badge": "Earn cashback on every order",
+    "badge": "Earn while you eat",
     "titleBefore": "The smartest way to ",
     "titleHighlight": "Dine & Save",
     "subtitle": "Elevate your dining experience. Koox turns every meal into a rewarding journey with real-time cashback and AI-powered savings across your favorite delivery apps.",
@@ -30,8 +32,8 @@
       "body": "Discover curated local favorites and trending hotspots through our editor-selected collections."
     },
     "step2": {
-      "title": "Order on Uber Eats",
-      "body": "Complete your checkout seamlessly through our integrated partners while we track your rewards."
+      "title": "Order on Keeta or foodpanda",
+      "body": "Check out on Keeta or foodpanda—we track your order and rewards."
     },
     "step3": {
       "title": "Earn cashback",
@@ -56,6 +58,22 @@
     "restaurant2": "Pasta & Co",
     "cashback15": "15% back",
     "cashback10": "10% back"
+  },
+  "merchant": {
+    "badge": "Join as a merchant",
+    "titleLine1": "Grow your business",
+    "titleLine2Start": "with ",
+    "titleLine2End": "",
+    "body": "Put your restaurant in front of thousands of hungry users. Reach new customers, increase order volume, and maximize your ROI with our high-conversion rewards platform.",
+    "phoneDisplay": "852 5988 5181",
+    "phoneTel": "+85259885181",
+    "contactHint": "Contact our partnership team today",
+    "dashboardTitle": "Merchant dashboard",
+    "dashboardSubtitle": "Real-time performance tracking",
+    "statNewCustomers": "New customers",
+    "statNewCustomersValue": "+75%",
+    "statRepeatOrders": "Repeat orders",
+    "statRepeatOrdersValue": "+60%"
   },
   "footer": {
     "rights": "All rights reserved.",

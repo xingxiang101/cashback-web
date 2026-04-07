@@ -25,6 +25,11 @@ export default {
         "surface-container-lowest": "#ffffff",
         "outline-variant": "#b4a6d5",
         "inverse-surface": "#12062c",
+        /** Text on inverse (dark) surfaces — must stay light for WCAG on #12062c */
+        "inverse-on-surface": "#e8e0f4",
+        "inverse-primary": "#c4b5ff",
+        "primary-fixed": "#9c93ff",
+        "primary-dim": "#4317ed",
       },
       borderRadius: {
         DEFAULT: "1rem",
