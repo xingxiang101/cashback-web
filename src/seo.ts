@@ -35,11 +35,15 @@ export function applyWebSeo(params: {
   title: string;
   description: string;
   locale: "en" | "zh-Hant";
+  /** Path including leading slash, e.g. `/` or `/merchants`. */
+  path?: string;
 }): void {
-  const { title, description, locale } = params;
+  const { title, description, locale, path = "/" } = params;
   const ogLocale = locale === "zh-Hant" ? "zh_TW" : "en_US";
   const ogLocaleAlternate = locale === "zh-Hant" ? "en_US" : "zh_TW";
-  const pageUrl = `${SITE_URL}/`;
+  const normalizedPath =
+    path === "/" || path === "" ? "/" : path.startsWith("/") ? path : `/${path}`;
+  const pageUrl = `${SITE_URL}${normalizedPath === "/" ? "/" : normalizedPath}`;
   const imageUrl = new URL(OG_IMAGE_PATH, `${SITE_URL}/`).href;
 
   document.title = title;

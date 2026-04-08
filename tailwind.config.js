@@ -20,6 +20,7 @@ export default {
         "on-tertiary-container": "#005d31",
         "tertiary-fixed": "#61fb9f",
         "surface-container": "#eee4ff",
+        "surface-container-high": "#e9ddff",
         "surface-container-low": "#f6edff",
         "surface-container-highest": "#e4d6ff",
         "surface-container-lowest": "#ffffff",

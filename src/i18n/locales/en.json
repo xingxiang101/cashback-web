@@ -1,9 +1,12 @@
 {
   "meta": {
     "title": "Koox | The smartest way to dine & save",
-    "description": "Elevate your dining experience. Koox turns every meal into a rewarding journey with real-time cashback and AI-powered savings across your favorite delivery apps."
+    "description": "Elevate your dining experience. Koox turns every meal into a rewarding journey with real-time cashback and AI-powered savings across your favorite delivery apps.",
+    "merchantTitle": "Koox | Grow your restaurant with Koox",
+    "merchantDescription": "Performance-based marketing for restaurants. Pay per result, build real reputation, and manage flexible campaigns across channels with Koox."
   },
   "nav": {
+    "productDetail": "Product details",
     "features": "Features",
     "howItWorks": "How it works",
     "forMerchants": "For merchants",
@@ -39,12 +42,12 @@
       "body": "Check out on Keeta or foodpanda—we track your order and rewards."
     },
     "step3": {
-      "title": "Earn cashback",
-      "body": "Watch your earnings grow instantly in your Koox wallet. Withdraw anytime to your bank."
-    },
-    "step4": {
       "title": "Submit & verify",
       "body": "Upload your receipt or order proof. Once verified by our AI, your cashback is instantly credited to your Koox wallet."
+    },
+    "step4": {
+      "title": "Earn cashback",
+      "body": "Watch your earnings grow instantly in your Koox wallet. Withdraw anytime to your bank."
     }
   },
   "features": {
@@ -60,7 +63,44 @@
     "restaurant1": "Sushi Zen",
     "restaurant2": "Pasta & Co",
     "cashback15": "15% back",
-    "cashback10": "10% back"
+    "cashback10": "10% back",
+    "unifiedRewardsTitle": "Unified Rewards",
+    "unifiedRewardsBody": "Connect all your delivery apps. One wallet, universal cashback, and zero friction.",
+    "unifiedRewardsTagline": "One ledger to rule them all.",
+    "unifiedKeetaAlt": "Keeta",
+    "unifiedFoodpandaAlt": "foodpanda"
+  },
+  "merchantPage": {
+    "heroBadge": "Merchant partnership",
+    "heroTitleBefore": "Grow your business with ",
+    "heroTitleHighlight": "Koox",
+    "heroTitleAfter": ".",
+    "heroSubtitle": "The ultimate ledger for the epicurean world. Elevate your restaurant’s digital presence with performance-based marketing and authentic engagement.",
+    "joinCta": "Join the network",
+    "learnMore": "Learn more",
+    "heroStat1Label": "Ranking boost",
+    "heroStat1Value": "20%",
+    "heroStat2Label": "Order volume",
+    "heroStat2Value": "1–1.2×",
+    "heroStat3Label": "Cost savings",
+    "heroStat3Value": "$10k+",
+    "heroStatsDisclaimer": "Merchant average values*",
+    "advantagesHeading": "The platform advantage",
+    "advantagesSub": "Elevating partnerships through transparency and autonomy.",
+    "benefit1Title": "Pay for results, transparent and worry-free",
+    "benefit1Body": "Each order is settled on its own—pay when it completes; full refund when it doesn’t. Dashboard data updates in real time with clear spending detail, so every dollar of your budget is spent with confidence.",
+    "benefit1TagA": "Zero risk",
+    "benefit1TagB": "Live visibility",
+    "benefit2Title": "Real reputation you can see",
+    "benefit2Body": "A huge volume of real users share photo-and-text reviews, and every piece of feedback is strictly moderated. Authentic experiences with real photos help your brand build a trustworthy reputation.",
+    "benefit3Title": "Your decisions, flexible operations",
+    "benefit3Body": "Campaign duration and reward amounts are entirely up to you. Whether you’re driving short-term volume or long-term growth, adjust freely to match your strategy—without rigid limits.",
+    "benefit4Title": "Full-platform coverage, many use cases",
+    "benefit4Body": "Beyond major food-delivery platforms, we also support lifestyle services and creative platforms. Manage multi-channel cashback in one place and reach different audiences with ease.",
+    "ctaHeading": "Ready to serve with us?",
+    "ctaBody": "Contact our merchant partnership team today to schedule a demo and explore personalized growth plans.",
+    "ctaPhoneLabel": "Phone support",
+    "partnerApplication": "Partner application"
   },
   "merchant": {
     "badge": "Join as a merchant",
@@ -74,9 +114,11 @@
     "dashboardTitle": "Merchant dashboard",
     "dashboardSubtitle": "Real-time performance tracking",
     "statNewCustomers": "New customers",
-    "statNewCustomersValue": "+75%",
+    "statNewCustomersValue": "+30%",
     "statRepeatOrders": "Repeat orders",
-    "statRepeatOrdersValue": "+60%"
+    "statRepeatOrdersValue": "+20%",
+    "statRankingBoost": "Ranking boost",
+    "statRankingBoostValue": "+20%"
   },
   "footer": {
     "rights": "All rights reserved.",

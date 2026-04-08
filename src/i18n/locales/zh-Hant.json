@@ -1,9 +1,12 @@
 {
   "meta": {
-    "title": "Koox | 聰明用餐，越吃越省",
-    "description": "提升每一次用餐體驗。Koox 以即時現金回饋與 AI 驅動的省錢方案，在你熟悉的外送平台上把每一餐都變成有回饋的旅程。"
+    "title": "Koox | 識食一定慳，越食越賺",
+    "description": "提升每一次用餐體驗。Koox 以現金即時入袋與 AI 驅動的省錢方案，在你熟悉的外送平台上把每一餐都變成有回饋的旅程。",
+    "merchantTitle": "Koox | 與 Koox 拓展餐廳業務",
+    "merchantDescription": "以成效計價的餐飲行銷：按結果付費、建立真實口碑，並跨渠道靈活管理回饋活動。"
   },
   "nav": {
+    "productDetail": "產品詳情",
     "features": "功能亮點",
     "howItWorks": "如何使用",
     "forMerchants": "商家合作",
@@ -20,10 +23,10 @@
     "callMerchant": "致電商務合作專線"
   },
   "hero": {
-    "badge": "邊點邊吃邊回饋",
+    "badge": "邊食邊賺",
     "titleBefore": "聰明用餐，",
     "titleHighlight": "越吃越省",
-    "subtitle": "提升每一次用餐體驗。Koox 把每一餐都變成可累積的回饋旅程，以即時現金回饋與 AI 省錢建議，串連你常用的外送平台。",
+    "subtitle": "提升每一次用餐體驗。Koox 把每一餐都變成可累積的回饋旅程，以現金即時入袋與 AI 省錢建議，接駁晒你常用嘅外卖 app。",
     "imgAlt": "Koox 應用程式介面預覽",
     "cashbackReceived": "回饋到帳",
     "cashbackAmount": "+¥12.40"
@@ -39,28 +42,65 @@
       "body": "在 Keeta 或 foodpanda 完成結帳，我們同步追蹤你的訂單與回饋。"
     },
     "step3": {
-      "title": "領取回饋",
-      "body": "回饋即時進入 Koox 錢包，隨時提領至銀行帳戶。"
-    },
-    "step4": {
       "title": "提交與驗證",
       "body": "上傳收據或訂單證明，經 AI 驗證後，回饋即時入帳至 Koox 錢包。"
+    },
+    "step4": {
+      "title": "領取回饋",
+      "body": "回饋即時進入 Koox 錢包，隨時提領至銀行帳戶。"
     }
   },
   "features": {
-    "aiTitle": "AI 管家：即時比價",
-    "aiBody": "別再付冤枉錢。智能引擎在幾秒內掃描多個外送平台，為你找出最低費用與最高回饋組合。",
-    "aiConciergeAlt1": "Koox 智能規劃",
-    "aiConciergeAlt2": "Koox — 跨平台比價優化訂單",
-    "aiConciergeAlt3": "Koox 管家 — 熱門趨勢",
-    "plannerTitle": "智能規劃：三日回饋路線圖",
-    "plannerBody": "依高倍回饋時段，為你個人化推薦接下來幾天最值得下單的餐廳與時段。",
+    "aiTitle": "AI 幫你格價",
+    "aiBody": "唔使再俾冤枉錢！AI 幾秒內幫你比較晒所有外賣平台，自動搵出最抵價錢同最高回贈，慳時間又慳錢。",
+    "aiConciergeAlt1": "Koox AI 格價",
+    "aiConciergeAlt2": "Koox — 跨外賣平台比價",
+    "aiConciergeAlt3": "Koox — 熱門著數趨勢",
+    "plannerTitle": "三日著數攻略",
+    "plannerBody": "跟住高回贈時段走，幫你計劃未來幾日邊間餐廳、邊個時段落單最抵，專屬慳錢路線幫你賺到盡。",
     "cardTonight": "今晚",
     "cardTomorrow": "明日",
     "restaurant1": "Sushi Zen",
     "restaurant2": "義麵工坊",
     "cashback15": "返 15%",
-    "cashback10": "返 10%"
+    "cashback10": "返 10%",
+    "unifiedRewardsTitle": "一個錢包搞掂晒",
+    "unifiedRewardsBody": "連接全城外賣平台，一個錢包通用回贈，唔使左開右開，用得方便零煩惱。",
+    "unifiedRewardsTagline": "一個錢包，搞掂晒。",
+    "unifiedKeetaAlt": "Keeta",
+    "unifiedFoodpandaAlt": "foodpanda"
+  },
+  "merchantPage": {
+    "heroBadge": "商家合作",
+    "heroTitleBefore": "與 ",
+    "heroTitleHighlight": "Koox",
+    "heroTitleAfter": " 一起拓展餐飲業務。",
+    "heroSubtitle": "為精緻餐飲打造的終極帳本。以成效行銷與真實互動，提升餐廳的數位能見度與轉換。",
+    "joinCta": "加入合作網絡",
+    "learnMore": "了解更多",
+    "heroStat1Label": "排名提升",
+    "heroStat1Value": "20%",
+    "heroStat2Label": "訂單增加",
+    "heroStat2Value": "1 - 1.2 倍",
+    "heroStat3Label": "成本節約",
+    "heroStat3Value": "1 萬以上",
+    "heroStatsDisclaimer": "加盟商平均數值*",
+    "advantagesHeading": "平台優勢",
+    "advantagesSub": "以透明與自主權，提升合作品質。",
+    "benefit1Title": "按效付費，透明無憂",
+    "benefit1Body": "每筆訂單獨立結算，完成即付、沒完成全額退。後台數據即時可見，消費明細一目了然，讓每一分預算都花得安心有保障。",
+    "benefit1TagA": "零風險",
+    "benefit1TagB": "即時透明",
+    "benefit2Title": "真實口碑，眼見為實",
+    "benefit2Body": "海量真實用戶上傳圖文評價，每一條反饋皆經嚴格審核。真實體驗搭配實拍照片，幫助品牌建立可信賴的優質聲譽。",
+    "benefit3Title": "自由決策，彈性經營",
+    "benefit3Body": "活動時間長短、返利金額多寡，全由商家自主決定。無論短期衝量或長期經營，都能依照自身策略靈活調整不受限。",
+    "benefit4Title": "全平台覆蓋，多元適用",
+    "benefit4Body": "除主流外賣平台外，更支持各類生活服務與設計創作平台。一站式管理多渠道返利，輕鬆觸及不同類型的目標客群。",
+    "ctaHeading": "準備與我們一起服務更多客人？",
+    "ctaBody": "立即聯絡商務合作團隊，預約演示並探索個人化成長方案。",
+    "ctaPhoneLabel": "電話支援",
+    "partnerApplication": "合作申請"
   },
   "merchant": {
     "badge": "加入商家合作",
@@ -74,9 +114,11 @@
     "dashboardTitle": "商家後台",
     "dashboardSubtitle": "即時掌握營運表現",
     "statNewCustomers": "新客",
-    "statNewCustomersValue": "+75%",
+    "statNewCustomersValue": "+30%",
     "statRepeatOrders": "回購訂單",
-    "statRepeatOrdersValue": "+60%"
+    "statRepeatOrdersValue": "+20%",
+    "statRankingBoost": "排名提升",
+    "statRankingBoostValue": "+20%"
   },
   "footer": {
     "rights": "保留所有權利。",
