@@ -20,7 +20,10 @@
     "socialFacebook": "Koox Facebook",
     "socialInstagram": "Koox Instagram",
     "socialX": "Koox X",
-    "callMerchant": "致電商務合作專線"
+    "callMerchant": "致電商務合作專線",
+    "emailMerchant": "以電郵聯絡商務合作",
+    "appStoreBadge": "於 App Store 下載",
+    "googlePlayBadge": "在 Google Play 下載"
   },
   "hero": {
     "badge": "邊食邊賺",
@@ -29,7 +32,11 @@
     "subtitle": "提升每一次用餐體驗。Koox 把每一餐都變成可累積的回饋旅程，以現金即時入袋與 AI 省錢建議，接駁晒你常用嘅外卖 app。",
     "imgAlt": "Koox 應用程式介面預覽",
     "cashbackReceived": "回饋到帳",
-    "cashbackAmount": "+¥12.40"
+    "cashbackAmount": "+¥12.40",
+    "storeAppLine1": "於 App Store",
+    "storeAppLine2": "下載",
+    "storeGoogleLine1": "Get it on",
+    "storeGoogleLine2": "Google Play"
   },
   "steps": {
     "heading": "如何使用",
@@ -100,6 +107,7 @@
     "ctaHeading": "準備與我們一起服務更多客人？",
     "ctaBody": "立即聯絡商務合作團隊，預約演示並探索個人化成長方案。",
     "ctaPhoneLabel": "電話支援",
+    "ctaEmailLabel": "電郵聯絡",
     "partnerApplication": "合作申請"
   },
   "merchant": {
@@ -110,6 +118,8 @@
     "body": "讓餐廳曝光在數以千計的用戶面前，觸及新客、提升訂單量，並透過高轉換的回饋平台放大投資報酬。",
     "phoneDisplay": "852 5988 5181",
     "phoneTel": "+85259885181",
+    "emailDisplay": "zoulong@koox.io",
+    "emailMailto": "zoulong@koox.io",
     "contactHint": "立即聯絡商務合作團隊",
     "dashboardTitle": "商家後台",
     "dashboardSubtitle": "即時掌握營運表現",
@@ -125,9 +135,5 @@
     "privacy": "隱私權政策",
     "terms": "服務條款",
     "cookie": "Cookie 政策"
-  },
-  "stores": {
-    "appStore": "App Store",
-    "googlePlay": "Google Play 商店"
   }
 }

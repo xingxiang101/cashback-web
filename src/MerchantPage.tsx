@@ -240,30 +240,53 @@ export function MerchantPage() {
                 <div className="absolute left-10 top-10 h-96 w-96 rounded-full bg-white blur-[120px]" />
                 <div className="absolute bottom-10 right-10 h-96 w-96 rounded-full bg-tertiary-fixed blur-[120px]" />
               </div>
-              <div className="relative z-10 mx-auto max-w-3xl space-y-8">
+              <div className="relative z-10 mx-auto max-w-4xl space-y-8">
                 <h2 className="font-headline text-4xl font-extrabold tracking-tight md:text-5xl lg:text-6xl">
                   {t("merchantPage.ctaHeading")}
                 </h2>
                 <p className="text-lg font-medium opacity-90 md:text-xl">{t("merchantPage.ctaBody")}</p>
-                <div className="flex flex-col items-center justify-center gap-10 pt-4 md:flex-row md:gap-12">
-                  <div className="flex items-center gap-4">
-                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white/20 backdrop-blur-md">
+                <div className="grid grid-cols-1 gap-6 pt-4 md:grid-cols-3 md:gap-8 md:items-stretch">
+                  <a
+                    href={`tel:${t("merchant.phoneTel")}`}
+                    className="flex flex-col items-center gap-4 rounded-3xl bg-white/10 p-8 text-center backdrop-blur-md transition-colors hover:bg-white/15"
+                    aria-label={t("a11y.callMerchant")}
+                  >
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white/20">
                       <span className="material-symbols-outlined text-3xl">call</span>
                     </div>
-                    <div className="text-left">
-                      <p className="text-sm font-bold uppercase tracking-widest opacity-80">
+                    <div>
+                      <p className="mb-1 text-xs font-bold uppercase tracking-widest opacity-80">
                         {t("merchantPage.ctaPhoneLabel")}
                       </p>
                       <p className="font-headline text-2xl font-bold md:text-3xl">{t("merchant.phoneDisplay")}</p>
                     </div>
-                  </div>
-                  <a
-                    href={`tel:${t("merchant.phoneTel")}`}
-                    className="inline-flex items-center justify-center rounded-full bg-white px-10 py-5 font-headline text-lg font-extrabold text-primary shadow-xl transition-transform hover:scale-105"
-                    aria-label={t("a11y.callMerchant")}
-                  >
-                    {t("merchantPage.partnerApplication")}
                   </a>
+                  <a
+                    href={`mailto:${t("merchant.emailMailto")}`}
+                    className="flex flex-col items-center gap-4 rounded-3xl bg-white/10 p-8 text-center backdrop-blur-md transition-colors hover:bg-white/15"
+                    aria-label={t("a11y.emailMerchant")}
+                  >
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white/20">
+                      <span className="material-symbols-outlined text-3xl">mail</span>
+                    </div>
+                    <div className="min-w-0">
+                      <p className="mb-1 text-xs font-bold uppercase tracking-widest opacity-80">
+                        {t("merchantPage.ctaEmailLabel")}
+                      </p>
+                      <p className="break-all font-headline text-xl font-bold md:text-2xl">
+                        {t("merchant.emailDisplay")}
+                      </p>
+                    </div>
+                  </a>
+                  <div className="flex min-h-[140px] items-center justify-center md:min-h-0">
+                    <a
+                      href={`tel:${t("merchant.phoneTel")}`}
+                      className="inline-flex w-full items-center justify-center rounded-3xl bg-white px-8 py-8 font-headline text-lg font-extrabold text-primary shadow-xl transition-transform hover:scale-105 md:h-full md:min-h-[200px] md:py-0"
+                      aria-label={t("a11y.callMerchant")}
+                    >
+                      {t("merchantPage.partnerApplication")}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

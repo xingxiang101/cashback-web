@@ -2,6 +2,7 @@ import { useEffect, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteNav } from "./components/SiteNav";
+import { StoreDownloadButtons } from "./components/StoreDownloadButtons";
 import { applyWebSeo } from "./seo";
 
 const SHOWCASE_WEBP = "/showcase-smart-planner.webp";
@@ -74,34 +75,8 @@ export function ProductPage() {
               <p className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-on-surface-variant md:text-xl lg:mx-0">
                 {t("hero.subtitle")}
               </p>
-              <div
-                id="download"
-                className="flex flex-col justify-center gap-4 sm:flex-row lg:justify-start"
-              >
-                <button
-                  type="button"
-                  className="flex items-center justify-center gap-3 rounded-full bg-on-surface px-8 py-4 font-bold text-surface shadow-xl transition-all hover:shadow-primary/20 active:scale-95"
-                >
-                  <span
-                    className="material-symbols-outlined"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    ios
-                  </span>
-                  {t("stores.appStore")}
-                </button>
-                <button
-                  type="button"
-                  className="flex items-center justify-center gap-3 rounded-full bg-surface-container-highest px-8 py-4 font-bold text-on-secondary-container transition-all active:scale-95"
-                >
-                  <span
-                    className="material-symbols-outlined"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    play_arrow
-                  </span>
-                  {t("stores.googlePlay")}
-                </button>
+              <div id="download">
+                <StoreDownloadButtons />
               </div>
             </div>
 
