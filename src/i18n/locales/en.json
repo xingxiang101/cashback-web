@@ -20,7 +20,10 @@
     "socialFacebook": "Koox on Facebook",
     "socialInstagram": "Koox on Instagram",
     "socialX": "Koox on X",
-    "callMerchant": "Call merchant partnership"
+    "callMerchant": "Call merchant partnership",
+    "emailMerchant": "Email merchant partnership",
+    "appStoreBadge": "Download on the App Store",
+    "googlePlayBadge": "Get it on Google Play"
   },
   "hero": {
     "badge": "Earn while you eat",
@@ -29,7 +32,11 @@
     "subtitle": "Elevate your dining experience. Koox turns every meal into a rewarding journey with real-time cashback and AI-powered savings across your favorite delivery apps.",
     "imgAlt": "Koox app preview",
     "cashbackReceived": "Reward received",
-    "cashbackAmount": "+¥12.40"
+    "cashbackAmount": "+¥12.40",
+    "storeAppLine1": "Download on the",
+    "storeAppLine2": "App Store",
+    "storeGoogleLine1": "Get it on",
+    "storeGoogleLine2": "Google Play"
   },
   "steps": {
     "heading": "How it works",
@@ -100,6 +107,7 @@
     "ctaHeading": "Ready to serve with us?",
     "ctaBody": "Contact our merchant partnership team today to schedule a demo and explore personalized growth plans.",
     "ctaPhoneLabel": "Phone support",
+    "ctaEmailLabel": "Email support",
     "partnerApplication": "Partner application"
   },
   "merchant": {
@@ -110,6 +118,8 @@
     "body": "Put your restaurant in front of thousands of hungry users. Reach new customers, increase order volume, and maximize your ROI with our high-conversion rewards platform.",
     "phoneDisplay": "852 5988 5181",
     "phoneTel": "+85259885181",
+    "emailDisplay": "zoulong@koox.io",
+    "emailMailto": "zoulong@koox.io",
     "contactHint": "Contact our partnership team today",
     "dashboardTitle": "Merchant dashboard",
     "dashboardSubtitle": "Real-time performance tracking",
