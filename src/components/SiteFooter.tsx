@@ -31,7 +31,7 @@ export function SiteFooter() {
         <div className="text-center md:text-left">
           <div className="mb-4 font-headline text-xl font-bold text-violet-700">Koox</div>
           <p className="font-body text-sm leading-relaxed text-slate-500">
-            © {new Date().getFullYear()} Koox. {t("footer.rights")}
+            © {new Date().getFullYear()} CashBite Limited. {t("footer.rights")}
           </p>
         </div>
         <nav className="flex flex-wrap justify-center gap-8">
