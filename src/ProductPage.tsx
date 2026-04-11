@@ -1,14 +1,13 @@
 import { useEffect, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
+import productHeroHome from "./assets/product-hero-home.png";
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteNav } from "./components/SiteNav";
 import { StoreDownloadButtons } from "./components/StoreDownloadButtons";
 import { applyWebSeo } from "./seo";
 
-const SHOWCASE_WEBP = "/showcase-smart-planner.webp";
-const SHOWCASE_JPG = "/showcase-smart-planner.jpg";
-const SHOWCASE_W = 265;
-const SHOWCASE_H = 1024;
+const HERO_SCREENSHOT_W = 473;
+const HERO_SCREENSHOT_H = 1024;
 
 const AI_COMPARISON = [
   {
@@ -80,22 +79,19 @@ export function ProductPage() {
               </div>
             </div>
 
-            <div className="relative flex w-full max-w-[min(100%,265px)] flex-1 justify-center lg:max-w-none lg:justify-end">
+            <div className="relative flex w-full max-w-[min(100%,300px)] flex-1 justify-center lg:max-w-none lg:justify-end">
               <div className="absolute inset-0 scale-150 rounded-full bg-primary/5 blur-[120px]" />
-              <div className="glass-card relative w-full max-w-[265px] rotate-3 overflow-hidden rounded-[2.5rem] p-3 shadow-2xl transition-transform duration-700 hover:rotate-0 sm:rounded-[3rem] sm:p-4">
+              <div className="glass-card relative w-full max-w-[300px] rotate-3 overflow-hidden rounded-[2.5rem] px-0.5 py-3 shadow-2xl transition-transform duration-700 hover:rotate-0 sm:rounded-[3rem] sm:px-1 sm:py-4">
                 <div className="max-h-[min(68vh,520px)] overflow-hidden rounded-[2rem] sm:rounded-[2.5rem]">
-                  <picture>
-                    <source srcSet={SHOWCASE_WEBP} type="image/webp" />
-                    <img
-                      src={SHOWCASE_JPG}
-                      alt={t("hero.imgAlt")}
-                      className="h-full w-full object-cover object-top"
-                      width={SHOWCASE_W}
-                      height={SHOWCASE_H}
-                      decoding="async"
-                      loading="eager"
-                    />
-                  </picture>
+                  <img
+                    src={productHeroHome}
+                    alt={t("hero.imgAlt")}
+                    className="h-auto w-full max-h-[min(68vh,520px)] origin-top scale-x-[1.14] scale-y-100 object-contain object-top sm:scale-x-[1.1]"
+                    width={HERO_SCREENSHOT_W}
+                    height={HERO_SCREENSHOT_H}
+                    decoding="async"
+                    loading="eager"
+                  />
                 </div>
               </div>
               <div className="glass-card absolute -right-2 top-[22%] z-20 flex animate-bounce items-center gap-3 rounded-full px-4 py-3 shadow-xl sm:-right-10 sm:px-6 sm:py-4">
