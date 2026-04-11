@@ -1,20 +1,15 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import benefitFlexible from "./assets/merchant-benefits/flexible.png";
+import benefitMultiChannel from "./assets/merchant-benefits/multi-channel.png";
+import benefitPayPerformance from "./assets/merchant-benefits/pay-performance.png";
+import benefitReputation from "./assets/merchant-benefits/reputation.png";
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteNav } from "./components/SiteNav";
 import { applyWebSeo } from "./seo";
 
 const HERO_IMG =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuCJhxuMwc6-zaNb24F87pgaGhklb7QDbX55RrQVseKvBjwPnRASlX7w6oIrFtLkoxbYps6_WizllmwCOXzmkRU023WHP1fPElxOUeXUr3hVwP8xr9x5Ef2cqmIFcLA_lkL6p3DM8bim9Jt6yBzphZTLQpMEmqmpEX5WQsxp4wwddE4690VKXZjtTQe4cAanmouOBpRFf78ZZ4Nyd0tyjlJhCnDU-fSJCgR-6kI1qYFkfILLLseBCIb8XyHicuimlf-Zsjh00LfB_H3H";
-
-const BENEFIT_DASHBOARD_IMG =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuC8LYmCaxodGPcEWZbjSJQ-FCOMpvPxv6Duh4lkV-7mTH78yWzXUFj43ekvoLYjQEH7lq_ih5JbPtTN4tiIkLtUdvEMXCamX8gH4yzkRP-UZhjG7LaW8MSUrU0ORXYKbbJY5YpXnp3eBV3XNjp8-FBhzVSzFEJY_gVCPDnR1nwsc3OXOM2-OKRtE382Sd9026f50XJd0jq2w92iRE0qmoIZS2CC9EVAUnaS-rfAb53VAi7DSXOa7hYV4dlLKzOt2JjwbFsRdMbJuSt3";
-
-const AVATARS = [
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuDZKe6gPaBO3UQ0ZecL1jbl1MxASW8jhFpaAeipkiIeyjqILxRRXS7RZrle2Vi7gubJDg9KbPInjbJEjyuCxCy9oFudIBZ_xXzeMGUbVZNIVH9CkOyyC2JzauVsGlSlVqF7rjMfuff0X3woJ2K6eYi2ryJpwQVyGVi6HxGyCg5LUg6C2CPvSu1EhUE0CjTvC8WPabVmOB5JABk2sbUaL6_PT3IjyjG9tba6NrBvVPHGCtBpiV-1yA7TeLTmS56uLeA8LZObk0hUYovP",
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuDOtjSpmnzM8H0RPrwRim3pHReKl17ecz092PrWoSsRy3A64Os4YNm5WY6BeaUSjGjw5lWY2uLoLDJyBv12lHloOEEk1wGbssL9QZ-TQYbpMTT0EWzdrMX_U-3F5JrAh6LXrM6HihTtICmlmZsuhOnQ-GRNhGnanDvEN8cy_TX_PY8MiXlXBl6G2aQkaMKI1b52g1PoCHYDq4dILV_29x-H6Lf_zpcIvznL5tqrY2Y1QnSRozkAvX2RkwHxXp0y2YYuKpHDbfphsLcI",
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuCvCln_pRuKcBjBG_5pPTUwH1W9TyD459POnDMtYYmS6CXofV0xnycp1fV2IqUrjHBagYMFbUYQsPk24jASkBx8XvwcYB5ihO3-iVRWfj6ENZ0PXkYeR0aW-jcmF2Jb98FclC94HHAjQHt5LJUVJpANglLmX_tNdzyFMXY7hI8I35gjPTLEAfIXGSrt50xmcYR34UWgHJZaRNxO4K3nCzeMsRFtD4jRknMUDLvNtaQLPHhbq-TM1dKENBqBlzNfeOfhwBBwCDBFah0M",
-] as const;
 
 export function MerchantPage() {
   const { t, i18n } = useTranslation();
@@ -135,98 +130,125 @@ export function MerchantPage() {
 
         <section id="merchant-advantages" className="bg-surface-container-low py-24 sm:py-28 lg:py-32">
           <div className="mx-auto max-w-7xl px-4 sm:px-8">
-            <div className="mx-auto mb-16 max-w-2xl space-y-4 text-center md:mb-20">
-              <h2 className="font-headline text-4xl font-bold tracking-tight text-on-surface md:text-5xl">
+            <div className="mb-10 space-y-4 text-left md:mx-auto md:mb-20 md:max-w-2xl md:text-center">
+              <h2 className="font-headline text-3xl font-bold tracking-tight text-on-surface md:text-4xl lg:text-5xl">
                 {t("merchantPage.advantagesHeading")}
               </h2>
               <p className="font-medium text-on-surface-variant">{t("merchantPage.advantagesSub")}</p>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-12">
-              <div className="flex flex-col justify-between rounded-[3rem] bg-surface-container-lowest p-10 md:col-span-7 md:p-12">
-                <div className="space-y-6">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary-container/20 text-primary transition-transform group-hover:scale-110">
-                    <span className="material-symbols-outlined text-4xl">payments</span>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-12 md:gap-8">
+              {/* Pay-per-performance */}
+              <div className="group flex flex-col overflow-hidden rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(79,48,248,0.04)] transition-all duration-500 hover:shadow-xl md:col-span-7 md:flex-row md:items-center md:gap-8 md:rounded-[3rem] md:p-12 md:shadow-none">
+                <div className="order-1 w-full overflow-hidden md:order-2 md:max-h-[400px] md:min-h-0 md:flex-1 md:rounded-2xl">
+                  <img
+                    src={benefitPayPerformance}
+                    alt=""
+                    className="h-auto w-full object-cover object-center transition-transform duration-500 group-hover:scale-105 md:h-full md:max-h-[400px] md:object-contain"
+                    width={800}
+                    height={520}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div className="order-2 flex flex-1 flex-col gap-4 p-8 md:order-1 md:space-y-6 md:p-0">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 md:h-16 md:w-16 md:rounded-2xl md:bg-primary-container/20 md:text-primary">
+                    <span className="material-symbols-outlined text-2xl text-primary md:text-4xl">payments</span>
                   </div>
-                  <h3 className="font-headline text-3xl font-bold text-on-surface">
+                  <h3 className="font-headline text-xl font-bold text-on-surface md:text-3xl">
                     {t("merchantPage.benefit1Title")}
                   </h3>
-                  <p className="text-xl font-medium leading-relaxed text-on-surface-variant">
+                  <p className="text-base font-medium leading-relaxed text-on-surface-variant md:text-xl">
                     {t("merchantPage.benefit1Body")}
                   </p>
-                </div>
-                <div className="mt-10 flex flex-wrap items-center gap-3">
-                  <span className="rounded-full bg-tertiary-container px-4 py-2 text-xs font-bold tracking-widest text-on-tertiary-container">
-                    {t("merchantPage.benefit1TagA")}
-                  </span>
-                  <span className="rounded-full bg-surface-container-high px-4 py-2 text-xs font-bold tracking-widest text-on-surface-variant">
-                    {t("merchantPage.benefit1TagB")}
-                  </span>
-                </div>
-              </div>
-
-              <div className="relative flex flex-col justify-between overflow-hidden rounded-[3rem] bg-primary p-10 text-on-primary md:col-span-5 md:p-12">
-                <span className="pointer-events-none absolute right-0 top-0 text-[12rem] opacity-10 transition-transform duration-700">
-                  <span className="material-symbols-outlined">verified_user</span>
-                </span>
-                <div className="relative z-10 space-y-6">
-                  <h3 className="font-headline text-3xl font-bold">{t("merchantPage.benefit2Title")}</h3>
-                  <p className="text-lg font-medium leading-relaxed opacity-90">{t("merchantPage.benefit2Body")}</p>
-                </div>
-                <div className="relative z-10 mt-10">
-                  <div className="flex -space-x-4">
-                    {AVATARS.map((src) => (
-                      <img
-                        key={src}
-                        src={src}
-                        alt=""
-                        className="h-12 w-12 rounded-full border-2 border-primary object-cover"
-                        width={48}
-                        height={48}
-                        loading="lazy"
-                      />
-                    ))}
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-primary bg-secondary text-xs font-bold font-headline">
-                      5k+
-                    </div>
+                  <div className="flex flex-wrap gap-3 pt-1 md:pt-0">
+                    <span className="rounded-full bg-tertiary-container px-4 py-2 text-xs font-bold tracking-widest text-on-tertiary-container">
+                      {t("merchantPage.benefit1TagA")}
+                    </span>
+                    <span className="rounded-full bg-surface-container-high px-4 py-2 text-xs font-bold tracking-widest text-on-surface-variant">
+                      {t("merchantPage.benefit1TagB")}
+                    </span>
                   </div>
                 </div>
               </div>
 
-              <div className="rounded-[3rem] bg-surface-container-highest p-10 transition-colors duration-500 hover:bg-surface-container-high md:col-span-5 md:p-12">
-                <div className="flex h-full flex-col justify-between">
-                  <div className="space-y-6">
-                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/50 text-on-surface-variant">
-                      <span className="material-symbols-outlined text-4xl">tune</span>
-                    </div>
-                    <h3 className="font-headline text-3xl font-bold text-on-surface">
+              {/* Real reputation */}
+              <div className="group flex flex-col overflow-hidden rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(79,48,248,0.04)] transition-all duration-500 hover:shadow-xl md:col-span-5 md:rounded-[3rem] md:bg-primary md:p-12 md:text-on-primary md:shadow-none">
+                <div className="order-1 w-full overflow-hidden md:order-2 md:mt-8 md:h-72 md:shrink-0 md:rounded-2xl">
+                  <img
+                    src={benefitReputation}
+                    alt=""
+                    className="h-auto w-full object-cover object-top transition-transform duration-500 group-hover:scale-105 md:h-full md:object-contain md:object-top"
+                    width={640}
+                    height={480}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div className="order-2 flex flex-col gap-4 p-8 md:relative md:z-10 md:order-1 md:space-y-6 md:p-0">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-tertiary-container/20 md:hidden">
+                    <span className="material-symbols-outlined text-2xl text-tertiary">verified</span>
+                  </div>
+                  <h3 className="font-headline text-xl font-bold text-on-surface md:text-3xl md:text-on-primary">
+                    {t("merchantPage.benefit2Title")}
+                  </h3>
+                  <p className="text-base font-medium leading-relaxed text-on-surface-variant md:text-lg md:text-on-primary md:opacity-90">
+                    {t("merchantPage.benefit2Body")}
+                  </p>
+                </div>
+              </div>
+
+              {/* Flexible management */}
+              <div className="group flex flex-col overflow-hidden rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(79,48,248,0.04)] transition-all duration-500 hover:shadow-xl md:col-span-5 md:rounded-[3rem] md:bg-surface-container-highest md:p-12 md:shadow-none md:transition-colors md:duration-500 md:hover:bg-surface-container-high">
+                <div className="order-1 h-[240px] w-full overflow-hidden md:order-2 md:h-auto md:max-h-[350px] md:rounded-2xl">
+                  <img
+                    src={benefitFlexible}
+                    alt=""
+                    className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105 md:max-h-[350px] md:object-cover"
+                    width={640}
+                    height={480}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div className="order-2 flex flex-col gap-4 p-8 md:order-1 md:flex-1 md:space-y-8 md:p-0">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary-container/30 md:h-16 md:w-16 md:rounded-2xl md:bg-white/50 md:text-on-surface-variant">
+                    <span className="material-symbols-outlined text-2xl text-secondary md:text-4xl">tune</span>
+                  </div>
+                  <div className="space-y-4 md:space-y-6">
+                    <h3 className="font-headline text-xl font-bold text-on-surface md:text-3xl">
                       {t("merchantPage.benefit3Title")}
                     </h3>
-                    <p className="text-lg font-medium leading-relaxed text-on-surface-variant">
+                    <p className="text-base font-medium leading-relaxed text-on-surface-variant md:text-lg">
                       {t("merchantPage.benefit3Body")}
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="flex flex-col items-center gap-10 rounded-[3rem] bg-white p-10 shadow-ambient md:col-span-7 md:flex-row md:p-12">
-                <div className="flex-1 space-y-6">
-                  <h3 className="font-headline text-3xl font-bold text-on-surface">
+              {/* Multi-channel */}
+              <div className="group flex flex-col overflow-hidden rounded-2xl bg-surface-container-lowest shadow-[0_10px_30px_rgba(79,48,248,0.04)] transition-all duration-500 hover:shadow-xl md:col-span-7 md:flex-row md:items-center md:gap-8 md:rounded-[3rem] md:bg-white md:p-12 md:shadow-[0_20px_40px_rgba(79,48,248,0.05)]">
+                <div className="order-1 w-full overflow-hidden md:order-2 md:max-h-[400px] md:flex-1 md:rounded-2xl">
+                  <img
+                    src={benefitMultiChannel}
+                    alt=""
+                    className="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-105 md:max-h-[400px] md:object-contain md:object-center"
+                    width={800}
+                    height={520}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div className="order-2 flex flex-1 flex-col gap-4 p-8 md:order-1 md:space-y-6 md:p-0">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-fixed/20 md:hidden">
+                    <span className="material-symbols-outlined text-2xl text-on-primary-container">hub</span>
+                  </div>
+                  <h3 className="font-headline text-xl font-bold text-on-surface md:text-3xl">
                     {t("merchantPage.benefit4Title")}
                   </h3>
-                  <p className="text-lg font-medium leading-relaxed text-on-surface-variant">
+                  <p className="text-base font-medium leading-relaxed text-on-surface-variant md:text-lg">
                     {t("merchantPage.benefit4Body")}
                   </p>
-                </div>
-                <div className="flex w-full flex-1 items-center justify-center rounded-[2rem] bg-surface-container-low p-8">
-                  <img
-                    src={BENEFIT_DASHBOARD_IMG}
-                    alt=""
-                    className="w-full max-w-md rounded-xl shadow-lg transition-transform duration-500 hover:rotate-2"
-                    width={640}
-                    height={400}
-                    loading="lazy"
-                  />
                 </div>
               </div>
             </div>
