@@ -11,13 +11,10 @@ import logoCongYouLaMian from "./assets/merchant-logos/cong_you_la_mian_logo.web
 import logoCreativeBistro from "./assets/merchant-logos/creative_bistro.png";
 import logoForestKitchen from "./assets/merchant-logos/forest_kitchen_logo.webp";
 import logoFunHeeAveCafe from "./assets/merchant-logos/fun_hee_ave_cafe_logo.webp";
-import logoHemicycleCoffee from "./assets/merchant-logos/hemicycle_coffee.jpeg";
 import logoIndependentCoffee from "./assets/merchant-logos/independent_coffee.png";
 import logoIzakaya from "./assets/merchant-logos/izakaya.jpg";
 import logoJiaJiaTangBao from "./assets/merchant-logos/jia_jia_tang_bao.jpg";
 import logoJinbaiwan from "./assets/merchant-logos/jinbaiwan.png";
-import logoLanWeiJu from "./assets/merchant-logos/lan_wei_ju.jpg";
-import logoLocalSnack from "./assets/merchant-logos/local_snack.jpg";
 import logoMiGang from "./assets/merchant-logos/mi_gang_logo.webp";
 import logoPhoHongKong from "./assets/merchant-logos/pho_hong_kong.jpg";
 import logoShanxiNoodle from "./assets/merchant-logos/shanxi-noodle.png";
