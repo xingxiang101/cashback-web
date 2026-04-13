@@ -4,6 +4,12 @@ import benefitFlexible from "./assets/merchant-benefits/flexible.png";
 import benefitMultiChannel from "./assets/merchant-benefits/multi-channel.png";
 import benefitPayPerformance from "./assets/merchant-benefits/pay-performance.png";
 import benefitReputation from "./assets/merchant-benefits/reputation.png";
+import iconDianping from "./assets/platform-icons/dianping.png";
+import iconFoodpanda from "./assets/platform-icons/foodpanda.png";
+import iconInstagram from "./assets/platform-icons/instagram.png";
+import iconKeeta from "./assets/platform-icons/keeta.png";
+import iconOpenrice from "./assets/platform-icons/openrice.png";
+import iconXiaohongshu from "./assets/platform-icons/xiaohongshu.png";
 import logoDasanyuan from "./assets/merchant-logos/dasanyuan.png";
 import logoBetOnChefFriedRice from "./assets/merchant-logos/bet_on_chef_fried_rice.png";
 import logoCakeShop from "./assets/merchant-logos/cake_shop.jpg";
@@ -30,6 +36,21 @@ import { applyWebSeo } from "./seo";
 
 const HERO_IMG =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuCJhxuMwc6-zaNb24F87pgaGhklb7QDbX55RrQVseKvBjwPnRASlX7w6oIrFtLkoxbYps6_WizllmwCOXzmkRU023WHP1fPElxOUeXUr3hVwP8xr9x5Ef2cqmIFcLA_lkL6p3DM8bim9Jt6yBzphZTLQpMEmqmpEX5WQsxp4wwddE4690VKXZjtTQe4cAanmouOBpRFf78ZZ4Nyd0tyjlJhCnDU-fSJCgR-6kI1qYFkfILLLseBCIb8XyHicuimlf-Zsjh00LfB_H3H";
+
+const PLATFORM_ICONS = [
+  { name: "Keeta", src: iconKeeta },
+  { name: "Foodpanda", src: iconFoodpanda },
+  { name: "OpenRice", src: iconOpenrice },
+  { name: "Dianping", src: iconDianping },
+  { name: "Instagram", src: iconInstagram },
+  { name: "Xiaohongshu", src: iconXiaohongshu },
+];
+
+const MERCHANT_TUTORIAL_STEPS = [
+  { id: "1", icon: "headset_mic", titleKey: "merchantPage.tutorialStep1Title", bodyKey: "merchantPage.tutorialStep1Body" },
+  { id: "2", icon: "dashboard_customize", titleKey: "merchantPage.tutorialStep2Title", bodyKey: "merchantPage.tutorialStep2Body" },
+  { id: "3", icon: "task_alt", titleKey: "merchantPage.tutorialStep3Title", bodyKey: "merchantPage.tutorialStep3Body" },
+];
 
 const MERCHANT_TESTIMONIALS = [
   {
@@ -133,7 +154,10 @@ export function MerchantPage() {
                 </span>
               </h1>
               <p className="max-w-xl text-base leading-relaxed text-on-surface-variant md:text-lg">
-                <span className="mb-2 block font-semibold text-primary">{t("merchantPage.heroIntroLead")}</span>
+                <span className="block font-semibold text-primary">{t("merchantPage.heroIntroLead")}</span>
+                <span className="mb-2 mt-1 block font-semibold text-primary">
+                  {t("merchantPage.heroIntroLeadExtra")}
+                </span>
                 {t("merchantPage.heroIntroBody")}
               </p>
               <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center">
@@ -223,7 +247,7 @@ export function MerchantPage() {
         <section className="bg-surface pb-16 sm:pb-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-8">
             <p className="mb-8 text-center font-headline text-2xl font-bold tracking-tight text-on-surface sm:mb-10 md:text-3xl">
-              超30+商家合作
+              {t("merchantPage.partnersHeading")}
             </p>
 
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -291,9 +315,9 @@ export function MerchantPage() {
           </div>
         </section>
 
-        <section id="merchant-advantages" className="bg-surface-container-low py-24 sm:py-28 lg:py-32">
+        <section id="merchant-advantages" className="bg-surface-container-low py-16 sm:py-20 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-8">
-            <div className="mb-10 space-y-4 text-left md:mx-auto md:mb-20 md:max-w-2xl md:text-center">
+            <div className="mb-8 space-y-4 text-left md:mx-auto md:mb-12 md:max-w-2xl md:text-center">
               <h2 className="font-headline text-3xl font-bold tracking-tight text-on-surface md:text-4xl lg:text-5xl">
                 {t("merchantPage.advantagesHeading")}
               </h2>
@@ -412,13 +436,59 @@ export function MerchantPage() {
                   <p className="text-base font-medium leading-relaxed text-on-surface-variant md:text-lg">
                     {t("merchantPage.benefit4Body")}
                   </p>
+                  <div className="flex flex-wrap items-center gap-3 pt-1 md:pt-2">
+                    {PLATFORM_ICONS.map((icon) => (
+                      <div
+                        key={icon.name}
+                        className="flex h-10 w-10 items-center justify-center rounded-xl border border-outline-variant/20 bg-white p-1.5 shadow-sm md:h-12 md:w-12 md:rounded-2xl md:p-2"
+                      >
+                        <img src={icon.src} alt={icon.name} className="h-full w-full object-contain" loading="lazy" decoding="async" />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="px-4 pb-24 pt-4 sm:px-8 sm:pb-28">
+        <section className="bg-surface-container-low px-4 py-10 sm:px-8 sm:py-12">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-6 text-center md:mb-8">
+              <h2 className="font-headline text-3xl font-extrabold tracking-tight text-on-surface md:text-5xl">
+                {t("merchantPage.tutorialHeading")}
+              </h2>
+              <p className="mt-3 text-sm font-medium text-on-surface-variant md:text-base">
+                {t("merchantPage.tutorialSub")}
+              </p>
+            </div>
+
+            <div className="relative grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
+              <div className="pointer-events-none absolute left-0 right-0 top-14 z-0 hidden h-0.5 bg-primary/10 md:block" />
+              {MERCHANT_TUTORIAL_STEPS.map((step) => (
+                <article
+                  key={step.id}
+                  className="relative z-10 flex h-full flex-col items-center rounded-[2rem] bg-surface-container-lowest p-8 text-center shadow-[0_20px_40px_rgba(79,48,248,0.06)]"
+                >
+                  <div className="relative mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary text-on-primary shadow-lg shadow-primary/25">
+                    <span className="material-symbols-outlined text-3xl">{step.icon}</span>
+                    <span className="absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full bg-tertiary-fixed text-xs font-black text-on-tertiary-fixed">
+                      {step.id}
+                    </span>
+                  </div>
+                  <h3 className="mb-3 font-headline text-2xl font-bold text-on-surface">
+                    {t(step.titleKey)}
+                  </h3>
+                  <p className="text-sm font-medium leading-relaxed text-on-surface-variant md:text-base">
+                    {t(step.bodyKey)}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="px-4 pb-16 pt-2 sm:px-8 sm:pb-20">
           <div className="mx-auto max-w-7xl">
             <div className="editorial-gradient relative overflow-hidden rounded-[3rem] p-10 text-center text-on-primary shadow-[0_40px_80px_rgba(79,48,248,0.15)] md:rounded-[4rem] md:p-16 lg:p-24">
               <div className="pointer-events-none absolute left-0 top-0 h-full w-full opacity-10">
