@@ -1,5 +1,6 @@
 import { useEffect, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 import productHeroHome from "./assets/product-hero-home.png";
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteNav } from "./components/SiteNav";
@@ -42,6 +43,7 @@ const FOODPANDA_LOGO = "/features/foodpanda.png";
 
 export function ProductPage() {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
 
   useEffect(() => {
     const locale = i18n.language === "zh-Hant" ? "zh-Hant" : "en";
@@ -49,9 +51,19 @@ export function ProductPage() {
       title: t("meta.title"),
       description: t("meta.description"),
       locale,
-      path: "/",
+      path: location.pathname === "/product-detail" ? "/product-detail" : "/",
     });
-  }, [t, i18n.language]);
+  }, [t, i18n.language, location.pathname]);
+
+  useEffect(() => {
+    if (location.pathname !== "/product-detail") return;
+    const target = document.getElementById("product-detail");
+    if (!target) return;
+    // Defer until layout settles to avoid jittery jump.
+    requestAnimationFrame(() => {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }, [location.pathname]);
 
   return (
     <>

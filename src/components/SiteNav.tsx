@@ -9,7 +9,7 @@ export function SiteNav({ variant }: { variant: NavVariant }) {
   const { t } = useTranslation();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const isProduct = location.pathname === "/";
+  const isProduct = location.pathname === "/" || location.pathname === "/product-detail";
   const isMerchant = location.pathname === "/merchants";
 
   const productLinkClass = (active: boolean) =>
@@ -34,7 +34,7 @@ export function SiteNav({ variant }: { variant: NavVariant }) {
         </Link>
 
         <div className="hidden items-center gap-8 md:flex lg:gap-10">
-          <Link className={productLinkClass(isProduct)} to="/#product-detail">
+          <Link className={productLinkClass(isProduct)} to="/product-detail">
             {t("nav.productDetail")}
           </Link>
           <Link className={merchantLinkClass(isMerchant)} to="/merchants">
@@ -81,7 +81,7 @@ export function SiteNav({ variant }: { variant: NavVariant }) {
           </div>
           <div className="flex flex-col gap-4">
             <Link
-              to="/#product-detail"
+              to="/product-detail"
               className="font-medium text-on-surface"
               onClick={() => setMenuOpen(false)}
             >

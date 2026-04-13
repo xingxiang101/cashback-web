@@ -9,6 +9,7 @@ export default function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<ProductPage />} />
+        <Route path="/product-detail" element={<ProductPage />} />
         <Route path="/merchants" element={<MerchantPage />} />
       </Routes>
     </BrowserRouter>
