@@ -4,12 +4,104 @@ import benefitFlexible from "./assets/merchant-benefits/flexible.png";
 import benefitMultiChannel from "./assets/merchant-benefits/multi-channel.png";
 import benefitPayPerformance from "./assets/merchant-benefits/pay-performance.png";
 import benefitReputation from "./assets/merchant-benefits/reputation.png";
+import logoDasanyuan from "./assets/merchant-logos/dasanyuan.png";
+import logoBetOnChefFriedRice from "./assets/merchant-logos/bet_on_chef_fried_rice.png";
+import logoCakeShop from "./assets/merchant-logos/cake_shop.jpg";
+import logoCongYouLaMian from "./assets/merchant-logos/cong_you_la_mian_logo.webp";
+import logoCreativeBistro from "./assets/merchant-logos/creative_bistro.png";
+import logoForestKitchen from "./assets/merchant-logos/forest_kitchen_logo.webp";
+import logoFunHeeAveCafe from "./assets/merchant-logos/fun_hee_ave_cafe_logo.webp";
+import logoHemicycleCoffee from "./assets/merchant-logos/hemicycle_coffee.jpeg";
+import logoIndependentCoffee from "./assets/merchant-logos/independent_coffee.png";
+import logoIzakaya from "./assets/merchant-logos/izakaya.jpg";
+import logoJiaJiaTangBao from "./assets/merchant-logos/jia_jia_tang_bao.jpg";
+import logoJinbaiwan from "./assets/merchant-logos/jinbaiwan.png";
+import logoLanWeiJu from "./assets/merchant-logos/lan_wei_ju.jpg";
+import logoLocalSnack from "./assets/merchant-logos/local_snack.jpg";
+import logoMiGang from "./assets/merchant-logos/mi_gang_logo.webp";
+import logoPhoHongKong from "./assets/merchant-logos/pho_hong_kong.jpg";
+import logoShanxiNoodle from "./assets/merchant-logos/shanxi-noodle.png";
+import logoShenwansan from "./assets/merchant-logos/shenwansan.png";
+import logoShiZaiShiZai from "./assets/merchant-logos/shi_zai_shi_zai_logo.webp";
+import logoTrendyDessert from "./assets/merchant-logos/trendy_dessert.png";
+import logoTheChippy from "./assets/merchant-logos/the_chippy.png";
+import logoXiyuanxiaoguan from "./assets/merchant-logos/xiyuanxiaoguan.png";
+import logoYexiangge from "./assets/merchant-logos/yexiangge.png";
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteNav } from "./components/SiteNav";
 import { applyWebSeo } from "./seo";
 
 const HERO_IMG =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuCJhxuMwc6-zaNb24F87pgaGhklb7QDbX55RrQVseKvBjwPnRASlX7w6oIrFtLkoxbYps6_WizllmwCOXzmkRU023WHP1fPElxOUeXUr3hVwP8xr9x5Ef2cqmIFcLA_lkL6p3DM8bim9Jt6yBzphZTLQpMEmqmpEX5WQsxp4wwddE4690VKXZjtTQe4cAanmouOBpRFf78ZZ4Nyd0tyjlJhCnDU-fSJCgR-6kI1qYFkfILLLseBCIb8XyHicuimlf-Zsjh00LfB_H3H";
+
+const MERCHANT_TESTIMONIALS = [
+  {
+    id: "dasanyuan",
+    logo: logoDasanyuan,
+    name: "大三元",
+    quote: "書法品牌識別結合傳統紋樣，喺高端客群中辨識度持續提升。用唔晒嘅營銷費用仲可以退，靈活又抵玩。",
+  },
+  {
+    id: "xiyuan",
+    logo: logoXiyuanxiaoguan,
+    name: "喜苑小館",
+    quote: "Koox 幫我哋精準觸達目標客群，落單快、見效快，活動轉化穩定，效果仲好持久，唔使成日煩。",
+  },
+  {
+    id: "jinbaiwan",
+    logo: logoJinbaiwan,
+    name: "金百萬烤鴨",
+    quote: "以結果收費，數據面板清晰，旺季淡季都靈活調節。慳錢又慳心，性價比真係高。",
+  },
+  {
+    id: "shenwansan",
+    logo: logoShenwansan,
+    name: "沈萬三",
+    quote: "特色招牌結合地方故事，品牌記憶點鮮明，回頭客持續增加。一條龍服務好省心，收費又平，抵過自己搞。",
+  },
+  {
+    id: "friedrice",
+    logo: logoBetOnChefFriedRice,
+    name: "賭上廚師生涯的炒飯",
+    quote: "用爆款單品做活動測試，Koox 即時數據反應快，加碼決策快狠準。效果長尾好持久，埋單又唔貴。",
+  },
+  {
+    id: "shanxi",
+    logo: logoShanxiNoodle,
+    name: "山西麵館",
+    quote: "門店上線後曝光明顯提升，晚市尖峰時段自然下單量穩定增長。速度快、效果持續、服務周到、價錢公道，四樣齊晒。",
+  },
+  {
+    id: "phohongkong",
+    logo: logoPhoHongKong,
+    name: "Phở Hồng Kông",
+    quote:
+      "Koox giúp chúng tôi tiếp cận đúng khách hàng mục tiêu. Chi phí marketing chưa dùng hết được hoàn lại, rất linh hoạt. Triển khai nhanh, hiệu quả đến nhanh, và kết quả bền vững lâu dài. Dịch vụ rất nhẹ nhàng, không lo lắng, mà giá cả lại rẻ hơn các nền tảng khác.",
+  },
+  {
+    id: "thechippy",
+    logo: logoTheChippy,
+    name: "The Chippy",
+    quote:
+      "Koox helped us nail the exact crowd—expats craving a taste of home and locals after proper British grub. Unused marketing budget? Fully refunded. Setup was blazing fast, results kept rolling in for months, and the whole thing was completely hands-off. Cheaper than running ads ourselves, honestly.",
+  },
+] as const;
+
+const PARTNER_LOGOS = [
+  { name: "山西面馆", src: logoShanxiNoodle },
+  { name: "椰香阁", src: logoYexiangge },
+  { name: "Cake Shop", src: logoCakeShop },
+  { name: "蔥油拉麵", src: logoCongYouLaMian },
+  { name: "Creative Bistro", src: logoCreativeBistro },
+  { name: "Forest Kitchen", src: logoForestKitchen },
+  { name: "Fun Hee Ave Cafe", src: logoFunHeeAveCafe },
+  { name: "Independent Coffee", src: logoIndependentCoffee },
+  { name: "Izakaya", src: logoIzakaya },
+  { name: "Jia Jia Tang Bao", src: logoJiaJiaTangBao },
+  { name: "Mi Gang", src: logoMiGang },
+  { name: "Shi Zai Shi Zai", src: logoShiZaiShiZai },
+  { name: "Trendy Dessert", src: logoTrendyDessert },
+] as const;
 
 export function MerchantPage() {
   const { t, i18n } = useTranslation();
@@ -29,20 +121,23 @@ export function MerchantPage() {
       <SiteNav variant="merchant" />
 
       <main className="overflow-x-hidden pt-20 sm:pt-24">
-        <section className="relative flex min-h-[min(100vh,920px)] items-center overflow-hidden px-4 pb-16 pt-8 sm:px-8 lg:min-h-[870px]">
+        <section className="relative flex min-h-[min(100vh,920px)] items-start overflow-hidden px-4 pb-16 pt-6 sm:px-8 lg:min-h-[870px]">
           <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
             <div className="space-y-8">
               <div className="inline-flex items-center gap-2 rounded-full bg-surface-container-high px-4 py-1.5 text-sm font-bold tracking-wide text-primary">
                 <span className="h-2 w-2 animate-pulse rounded-full bg-tertiary-fixed" />
                 {t("merchantPage.heroBadge").toUpperCase()}
               </div>
-              <h1 className="font-headline text-5xl font-extrabold leading-[1.1] tracking-tighter text-on-surface lg:text-6xl xl:text-7xl">
-                {t("merchantPage.heroTitleBefore")}
-                <span className="text-primary italic">{t("merchantPage.heroTitleHighlight")}</span>
-                {t("merchantPage.heroTitleAfter")}
+              <h1 className="font-headline text-4xl font-extrabold leading-tight tracking-tight text-on-surface lg:text-5xl xl:text-6xl">
+                {t("merchantPage.heroHeadingLine1")}
+                <br />
+                <span className="font-bold text-on-surface-variant">
+                  {t("merchantPage.heroHeadingLine2")}
+                </span>
               </h1>
-              <p className="max-w-xl text-lg font-medium leading-relaxed text-on-surface-variant md:text-xl">
-                {t("merchantPage.heroSubtitle")}
+              <p className="max-w-xl text-base leading-relaxed text-on-surface-variant md:text-lg">
+                <span className="mb-2 block font-semibold text-primary">{t("merchantPage.heroIntroLead")}</span>
+                {t("merchantPage.heroIntroBody")}
               </p>
               <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center">
                 <a
@@ -123,6 +218,77 @@ export function MerchantPage() {
                 <p className="pt-1 text-right text-[10px] font-medium italic text-on-surface-variant">
                   {t("merchantPage.heroStatsDisclaimer")}
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-surface pb-16 sm:pb-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-8">
+            <p className="mb-8 text-center font-headline text-2xl font-bold tracking-tight text-on-surface sm:mb-10 md:text-3xl">
+              超30+商家合作
+            </p>
+
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {MERCHANT_TESTIMONIALS.map((item) => (
+                <article
+                  key={item.id}
+                  className="flex h-full flex-col justify-between rounded-2xl border border-outline-variant/35 bg-surface-container-low p-6 shadow-[0_10px_30px_rgba(79,48,248,0.04)] md:p-8"
+                >
+                  <div className="space-y-5">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border border-outline-variant/25 bg-white shadow-sm">
+                        <img
+                          src={item.logo}
+                          alt={item.name}
+                          className="h-full w-full object-cover"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      <div>
+                        <p className="font-headline text-base font-bold text-on-surface">
+                          {item.name}
+                        </p>
+                      </div>
+                    </div>
+                    <p className="text-sm italic leading-relaxed text-on-surface">
+                      "{item.quote}"
+                    </p>
+                  </div>
+                </article>
+              ))}
+              <article className="flex h-full min-h-[200px] flex-col items-center justify-center rounded-2xl border-2 border-dashed border-primary/25 bg-surface-container-low/50 p-6 text-center shadow-[0_10px_30px_rgba(79,48,248,0.04)] md:p-8">
+                <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <span className="material-symbols-outlined text-4xl">more_horiz</span>
+                </div>
+                <p className="font-headline text-base font-bold text-on-surface-variant">
+                  {t("merchantPage.moreReviewsLabel")}
+                </p>
+                <p className="mt-1 text-sm text-on-surface-variant">{t("merchantPage.moreReviewsHint")}</p>
+              </article>
+            </div>
+          </div>
+
+          <div className="mt-10 border-y border-outline-variant/25 bg-surface-container-low py-4 sm:mt-14">
+            <div className="mx-auto max-w-7xl px-4 sm:px-8">
+              <div
+                className="flex gap-3 overflow-x-auto pb-1 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+              >
+                {PARTNER_LOGOS.map((logo) => (
+                  <figure
+                    key={logo.name}
+                    className="shrink-0 rounded-2xl border border-outline-variant/30 bg-white p-2 shadow-sm"
+                  >
+                    <img
+                      src={logo.src}
+                      alt={logo.name}
+                      className="h-14 w-24 rounded-xl object-cover sm:h-16 sm:w-28"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </figure>
+                ))}
               </div>
             </div>
           </div>

@@ -79,6 +79,10 @@
   },
   "merchantPage": {
     "heroBadge": "商家合作",
+    "heroHeadingLine1": "傳統網紅合作：先畀一大筆，",
+    "heroHeadingLine2": "效果睇彩數，評價冇把握",
+    "heroIntroLead": "Koox 新玩法：零前期費用，賣出一單先計佣。",
+    "heroIntroBody": "我哋只對結果負責，帶嚟嘅唔係過路客，係會回頭嘅好評熟客。精準搵到識食嘅客，等商戶自主掌握行銷節奏。",
     "heroTitleBefore": "與 ",
     "heroTitleHighlight": "Koox",
     "heroTitleAfter": " 一起拓展餐飲業務。",
@@ -92,6 +96,44 @@
     "heroStat3Label": "成本節約",
     "heroStat3Value": "1 萬以上",
     "heroStatsDisclaimer": "加盟商平均數值*",
+    "testimonialsHeading": "商家評價",
+    "logoStripLabel": "優質合作品牌",
+    "testimonials": {
+      "dasanyuan": {
+        "name": "大三元",
+        "quote": "以書法品牌識別結合傳統紋樣，讓我們在高端客群中的品牌辨識度持續提升。"
+      },
+      "xiyuan": {
+        "name": "喜苑小館",
+        "quote": "Koox 幫我們把精緻家常菜與地方特色更準確地觸達對口客群，活動轉化更穩定。"
+      },
+      "jinbaiwan": {
+        "name": "金百萬烤鴨",
+        "quote": "以結果付費加上清晰數據面板，讓我們在旺季與淡季都能更靈活地安排投放節奏。"
+      },
+      "shenwansan": {
+        "name": "沈萬三",
+        "quote": "特色招牌與地方故事讓品牌記憶點更鮮明，回訪客群也持續增加。"
+      },
+      "friedrice": {
+        "name": "賭上廚師生涯的炒飯",
+        "quote": "我們用爆款單品做活動測試，Koox 的即時數據讓加碼決策更快更準。"
+      },
+      "shanxi": {
+        "name": "山西麵館",
+        "quote": "門店上線後曝光明顯提升，晚市尖峰時段的自然下單量穩定成長。"
+      },
+      "yexiangge": {
+        "name": "椰香閣",
+        "quote": "熱帶風味主題活動上線後，新客轉化與社群分享率都明顯提升。"
+      },
+      "dahuchun": {
+        "name": "大壺春",
+        "quote": "品牌老店結合數位推廣後，午市與晚市都帶來更穩定的到店客流。"
+      }
+    },
+    "moreReviewsLabel": "⋯",
+    "moreReviewsHint": "還有更多商家評價待展示",
     "advantagesHeading": "平台優勢",
     "advantagesSub": "以透明與自主權，提升商務合作標準。",
     "benefit1Title": "按效付費",
@@ -104,7 +146,7 @@
     "benefit3Body": "活動時間長短、返利金額多寡，全由商家自主決定。",
     "benefit4Title": "多渠道",
     "benefit4Body": "一站式管理多渠道返利，輕鬆觸及不同類型的目標客群。",
-    "ctaHeading": "準備與我們一起服務更多客人？",
+    "ctaHeading": "準備獲得更多客人嗎？",
     "ctaBody": "立即聯絡商務合作團隊，預約演示並探索個人化成長方案。",
     "ctaPhoneLabel": "電話支援",
     "ctaEmailLabel": "電郵聯絡",

@@ -79,6 +79,10 @@
   },
   "merchantPage": {
     "heroBadge": "Merchant partnership",
+    "heroHeadingLine1": "Traditional influencer deals: pay upfront first,",
+    "heroHeadingLine2": "results are uncertain and review quality is a gamble",
+    "heroIntroLead": "Koox approach: zero upfront fee, commission only after each successful order.",
+    "heroIntroBody": "We are accountable for outcomes: not one-time passersby, but returning customers who leave quality reviews. Reach the right diners precisely while keeping campaign control in your hands.",
     "heroTitleBefore": "Grow your business with ",
     "heroTitleHighlight": "Koox",
     "heroTitleAfter": ".",
@@ -92,6 +96,44 @@
     "heroStat3Label": "Cost savings",
     "heroStat3Value": "$10k+",
     "heroStatsDisclaimer": "Merchant average values*",
+    "testimonialsHeading": "What merchants say",
+    "logoStripLabel": "Trusted by premium partners",
+    "testimonials": {
+      "dasanyuan": {
+        "name": "Da Sanyuan",
+        "quote": "Our calligraphy-led identity and traditional visual language now reach premium diners with stronger recall."
+      },
+      "xiyuan": {
+        "name": "Xiyuan Xiaoguan",
+        "quote": "Koox helps us match refined home-style dishes with the right audience, improving campaign conversion consistency."
+      },
+      "jinbaiwan": {
+        "name": "Jin Baiwan Roast Duck",
+        "quote": "Pay-for-performance plus clear analytics gives us better control over spending in both peak and off-peak periods."
+      },
+      "shenwansan": {
+        "name": "Shen Wansan",
+        "quote": "Our regional signature story now stands out better, and repeat visits have grown steadily."
+      },
+      "friedrice": {
+        "name": "Chef-Career Fried Rice",
+        "quote": "We test campaign ideas around hero dishes, and Koox real-time metrics help us scale the right offers quickly."
+      },
+      "shanxi": {
+        "name": "Shanxi Noodle House",
+        "quote": "After going live, store visibility improved clearly and dinner-hour organic orders kept climbing."
+      },
+      "yexiangge": {
+        "name": "Yexiangge",
+        "quote": "After launching our tropical-flavor campaign, both new customer conversion and social shares improved noticeably."
+      },
+      "dahuchun": {
+        "name": "Da Hu Chun",
+        "quote": "Combining our heritage brand with digital promotion brought steadier in-store traffic across lunch and dinner."
+      }
+    },
+    "moreReviewsLabel": "...",
+    "moreReviewsHint": "More merchant reviews are coming",
     "advantagesHeading": "The Merchant Advantage",
     "advantagesSub": "Elevating the standards of merchant partnerships through transparency and autonomy.",
     "benefit1Title": "Pay-per-performance",
@@ -104,7 +146,7 @@
     "benefit3Body": "Campaign duration and reward amounts are entirely up to you.",
     "benefit4Title": "Multi-Channel",
     "benefit4Body": "Manage multi-channel cashback in one place and reach different audiences with ease.",
-    "ctaHeading": "Ready to serve with us?",
+    "ctaHeading": "Ready to attract more customers?",
     "ctaBody": "Contact our merchant partnership team today to schedule a demo and explore personalized growth plans.",
     "ctaPhoneLabel": "Phone support",
     "ctaEmailLabel": "Email support",
