@@ -52,6 +52,49 @@ const MERCHANT_TUTORIAL_STEPS = [
   { id: "3", icon: "task_alt", titleKey: "merchantPage.tutorialStep3Title", bodyKey: "merchantPage.tutorialStep3Body" },
 ];
 
+const MERCHANT_COMPARISON_ROWS = [
+  {
+    id: "pricing",
+    icon: "account_balance_wallet",
+    labelKey: "merchantPage.comparisonPricingLabel",
+    kooxKey: "merchantPage.comparisonPricingKoox",
+    kolKey: "merchantPage.comparisonPricingKol",
+    adKey: "merchantPage.comparisonPricingAds",
+  },
+  {
+    id: "flexibility",
+    icon: "sync",
+    labelKey: "merchantPage.comparisonFlexibilityLabel",
+    kooxKey: "merchantPage.comparisonFlexibilityKoox",
+    kolKey: "merchantPage.comparisonFlexibilityKol",
+    adKey: "merchantPage.comparisonFlexibilityAds",
+  },
+  {
+    id: "data",
+    icon: "visibility",
+    labelKey: "merchantPage.comparisonDataLabel",
+    kooxKey: "merchantPage.comparisonDataKoox",
+    kolKey: "merchantPage.comparisonDataKol",
+    adKey: "merchantPage.comparisonDataAds",
+  },
+  {
+    id: "threshold",
+    icon: "currency_exchange",
+    labelKey: "merchantPage.comparisonThresholdLabel",
+    kooxKey: "merchantPage.comparisonThresholdKoox",
+    kolKey: "merchantPage.comparisonThresholdKol",
+    adKey: "merchantPage.comparisonThresholdAds",
+  },
+  {
+    id: "risk",
+    icon: "security",
+    labelKey: "merchantPage.comparisonRiskLabel",
+    kooxKey: "merchantPage.comparisonRiskKoox",
+    kolKey: "merchantPage.comparisonRiskKol",
+    adKey: "merchantPage.comparisonRiskAds",
+  },
+] as const;
+
 const MERCHANT_TESTIMONIALS = [
   {
     id: "dasanyuan",
@@ -484,6 +527,84 @@ export function MerchantPage() {
                   </p>
                 </article>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-surface px-4 py-12 sm:px-8 sm:py-16">
+          <div className="mx-auto max-w-7xl">
+            <div className="mb-8 space-y-2 text-center md:mb-10">
+              <h2 className="font-headline text-3xl font-extrabold tracking-tight text-on-surface md:text-5xl">
+                {t("merchantPage.comparisonHeading")}
+              </h2>
+              <p className="mx-auto max-w-2xl text-sm font-medium text-on-surface-variant md:text-base">
+                {t("merchantPage.comparisonSub")}
+              </p>
+            </div>
+
+            <div className="space-y-4 md:hidden">
+              {MERCHANT_COMPARISON_ROWS.map((row) => (
+                <article
+                  key={row.id}
+                  className="rounded-2xl border border-outline-variant/30 bg-surface-container-lowest p-5 shadow-[0_10px_30px_rgba(79,48,248,0.04)]"
+                >
+                  <h3 className="mb-3 flex items-center gap-2 font-headline text-lg font-bold text-primary">
+                    <span className="material-symbols-outlined text-xl">{row.icon}</span>
+                    {t(row.labelKey)}
+                  </h3>
+                  <div className="space-y-3">
+                    <div className="rounded-xl border-l-4 border-primary bg-primary/5 p-3">
+                      <p className="text-[11px] font-extrabold uppercase tracking-wider text-primary">Koox</p>
+                      <p className="text-sm font-semibold text-on-surface">{t(row.kooxKey)}</p>
+                    </div>
+                    <div className="grid grid-cols-2 gap-3 text-xs">
+                      <div className="opacity-80">
+                        <p className="mb-1 font-bold uppercase tracking-wider text-on-surface-variant">
+                          {t("merchantPage.comparisonKolTitle")}
+                        </p>
+                        <p className="text-on-surface-variant">{t(row.kolKey)}</p>
+                      </div>
+                      <div className="opacity-80">
+                        <p className="mb-1 font-bold uppercase tracking-wider text-on-surface-variant">
+                          {t("merchantPage.comparisonAdsTitle")}
+                        </p>
+                        <p className="text-on-surface-variant">{t(row.adKey)}</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <div className="hidden overflow-x-auto rounded-[2.5rem] border border-primary/10 bg-surface-container-lowest shadow-[0_20px_40px_rgba(79,48,248,0.08)] md:block">
+              <table className="w-full border-collapse text-left">
+                <thead>
+                  <tr className="bg-surface-container-low">
+                    <th className="p-7 font-headline text-lg font-bold text-on-surface">
+                      {t("merchantPage.comparisonItemTitle")}
+                    </th>
+                    <th className="bg-primary/5 p-7 font-headline text-lg font-extrabold text-primary">
+                      {t("merchantPage.comparisonKooxTitle")}
+                    </th>
+                    <th className="p-7 font-headline text-lg font-bold text-on-surface-variant">
+                      {t("merchantPage.comparisonKolTitle")}
+                    </th>
+                    <th className="p-7 font-headline text-lg font-bold text-on-surface-variant">
+                      {t("merchantPage.comparisonAdsTitle")}
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-primary/5">
+                  {MERCHANT_COMPARISON_ROWS.map((row) => (
+                    <tr key={row.id} className="hover:bg-surface-container-low/40">
+                      <td className="p-7 text-base font-bold text-on-surface">{t(row.labelKey)}</td>
+                      <td className="bg-primary/5 p-7 text-base font-extrabold text-primary">{t(row.kooxKey)}</td>
+                      <td className="p-7 text-base font-medium text-on-surface-variant">{t(row.kolKey)}</td>
+                      <td className="p-7 text-base font-medium text-on-surface-variant">{t(row.adKey)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
         </section>
