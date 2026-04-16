@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { LanguageToggle } from "./LanguageToggle";
 
 const SOCIAL_LINKS = [
@@ -35,24 +36,24 @@ export function SiteFooter() {
           </p>
         </div>
         <nav className="flex flex-wrap justify-center gap-8">
-          <a
+          <Link
             className="text-sm font-medium text-slate-500 transition-colors duration-200 hover:text-emerald-400"
-            href="#"
+            to="/privacy-policy"
           >
             {t("footer.privacy")}
-          </a>
+          </Link>
           <a
             className="text-sm font-medium text-slate-500 transition-colors duration-200 hover:text-emerald-400"
             href="#"
           >
             {t("footer.terms")}
           </a>
-          <a
+          <Link
             className="text-sm font-medium text-slate-500 transition-colors duration-200 hover:text-emerald-400"
-            href="#"
+            to="/cookie-policy"
           >
             {t("footer.cookie")}
-          </a>
+          </Link>
         </nav>
         <div className="flex flex-col items-center gap-4 sm:flex-row">
           <LanguageToggle />
