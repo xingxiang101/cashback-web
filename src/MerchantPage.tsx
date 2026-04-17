@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 import benefitFlexible from "./assets/merchant-benefits/flexible.png";
 import benefitMultiChannel from "./assets/merchant-benefits/multi-channel.png";
 import benefitPayPerformance from "./assets/merchant-benefits/pay-performance.png";
@@ -166,6 +167,7 @@ const PARTNER_LOGOS = [
 
 export function MerchantPage() {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
 
   useEffect(() => {
     const locale = i18n.language === "zh-Hant" ? "zh-Hant" : "en";
@@ -173,9 +175,9 @@ export function MerchantPage() {
       title: t("meta.merchantTitle"),
       description: t("meta.merchantDescription"),
       locale,
-      path: "/merchants",
+      path: location.pathname === "/merchants" ? "/merchants" : "/",
     });
-  }, [t, i18n.language]);
+  }, [t, i18n.language, location.pathname]);
 
   return (
     <>

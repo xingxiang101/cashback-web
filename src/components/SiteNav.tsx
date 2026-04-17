@@ -9,8 +9,8 @@ export function SiteNav({ variant }: { variant: NavVariant }) {
   const { t } = useTranslation();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-  const isProduct = location.pathname === "/" || location.pathname === "/product-detail";
-  const isMerchant = location.pathname === "/merchants";
+  const isProduct = location.pathname === "/product-detail";
+  const isMerchant = location.pathname === "/" || location.pathname === "/merchants";
 
   const productLinkClass = (active: boolean) =>
     active
@@ -56,7 +56,7 @@ export function SiteNav({ variant }: { variant: NavVariant }) {
             </button>
           ) : (
             <Link
-              to="/#download"
+              to="/product-detail#download"
               className="editorial-gradient hidden rounded-full px-8 py-3 font-headline text-sm font-bold text-on-primary shadow-ambient transition-transform active:scale-95 sm:inline-flex"
             >
               {t("nav.download")}
@@ -107,7 +107,7 @@ export function SiteNav({ variant }: { variant: NavVariant }) {
               </button>
             ) : (
               <Link
-                to="/#download"
+                to="/product-detail#download"
                 className="editorial-gradient block w-full rounded-full py-3 text-center font-headline font-bold text-on-primary"
                 onClick={() => setMenuOpen(false)}
               >

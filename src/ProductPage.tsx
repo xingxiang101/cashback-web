@@ -51,7 +51,7 @@ export function ProductPage() {
       title: t("meta.title"),
       description: t("meta.description"),
       locale,
-      path: location.pathname === "/product-detail" ? "/product-detail" : "/",
+      path: "/product-detail",
     });
   }, [t, i18n.language, location.pathname]);
 
