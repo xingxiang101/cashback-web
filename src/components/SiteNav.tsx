@@ -10,6 +10,7 @@ export function SiteNav({ variant }: { variant: NavVariant }) {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const isProduct = location.pathname === "/product-detail";
+  const isDeliveryOps = location.pathname === "/delivery-operations";
   const isMerchant = location.pathname === "/" || location.pathname === "/merchants";
 
   const productLinkClass = (active: boolean) =>
@@ -18,6 +19,11 @@ export function SiteNav({ variant }: { variant: NavVariant }) {
       : "font-medium text-slate-600 transition-colors duration-300 hover:text-primary dark:text-slate-400";
 
   const merchantLinkClass = (active: boolean) =>
+    active
+      ? "border-b-2 border-primary pb-1 font-bold text-primary dark:text-violet-400"
+      : "font-medium text-slate-600 transition-colors duration-300 hover:text-primary dark:text-slate-400";
+
+  const deliveryLinkClass = (active: boolean) =>
     active
       ? "border-b-2 border-primary pb-1 font-bold text-primary dark:text-violet-400"
       : "font-medium text-slate-600 transition-colors duration-300 hover:text-primary dark:text-slate-400";
@@ -40,6 +46,9 @@ export function SiteNav({ variant }: { variant: NavVariant }) {
           <Link className={merchantLinkClass(isMerchant)} to="/merchants">
             {t("nav.forMerchants")}
           </Link>
+          <Link className={deliveryLinkClass(isDeliveryOps)} to="/delivery-operations">
+            {t("nav.deliveryOperations")}
+          </Link>
         </div>
 
         <div className="flex items-center gap-2 sm:gap-3">
@@ -55,12 +64,12 @@ export function SiteNav({ variant }: { variant: NavVariant }) {
               {t("nav.download")}
             </button>
           ) : (
-            <Link
-              to="/product-detail#download"
-              className="editorial-gradient hidden rounded-full px-8 py-3 font-headline text-sm font-bold text-on-primary shadow-ambient transition-transform active:scale-95 sm:inline-flex"
+            <span
+              aria-hidden
+              className="invisible pointer-events-none hidden rounded-full px-8 py-3 font-headline text-sm font-bold sm:inline-flex"
             >
               {t("nav.download")}
-            </Link>
+            </span>
           )}
           <button
             type="button"
@@ -94,7 +103,14 @@ export function SiteNav({ variant }: { variant: NavVariant }) {
             >
               {t("nav.forMerchants")}
             </Link>
-            {variant === "product" ? (
+            <Link
+              to="/delivery-operations"
+              className="font-medium text-on-surface"
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("nav.deliveryOperations")}
+            </Link>
+            {variant === "product" && (
               <button
                 type="button"
                 className="editorial-gradient w-full rounded-full py-3 font-headline font-bold text-on-primary"
@@ -105,14 +121,6 @@ export function SiteNav({ variant }: { variant: NavVariant }) {
               >
                 {t("nav.download")}
               </button>
-            ) : (
-              <Link
-                to="/product-detail#download"
-                className="editorial-gradient block w-full rounded-full py-3 text-center font-headline font-bold text-on-primary"
-                onClick={() => setMenuOpen(false)}
-              >
-                {t("nav.download")}
-              </Link>
             )}
           </div>
         </div>
