@@ -8,7 +8,7 @@
     "deliveryDescription": "外賣平台代運營：菜單結構、活動策劃、數據分析與投放監控，覆蓋 Keeta、foodpanda 等渠道。低門檻分成合作，與你共同成長。"
   },
   "nav": {
-    "productDetail": "Koox霸王餐",
+    "productDetail": "Koox",
     "features": "功能亮點",
     "howItWorks": "如何使用",
     "deliveryOperations": "外賣運營",
@@ -91,7 +91,7 @@
     "heroTitleHighlight": "Koox",
     "heroTitleAfter": " 一起拓展餐飲業務。",
     "heroSubtitle": "連接外賣及生活服務平台，協助精緻餐飲觸及目標客群。按實際成交收費，確保每一分投資均轉化為實質客流與優質評價。",
-    "joinCta": "加入合作網絡",
+    "joinCta": "立即諮詢",
     "learnMore": "了解更多",
     "heroStat1Label": "排名提升",
     "heroStat1Value": "20%",
@@ -189,7 +189,7 @@
     "ctaBody": "立即聯絡商務合作團隊，預約演示並探索個人化成長方案。",
     "ctaPhoneLabel": "電話支援",
     "ctaEmailLabel": "電郵聯絡",
-    "partnerApplication": "合作申請"
+    "partnerApplication": "立即諮詢"
   },
   "deliveryOpsPage": {
     "heroBadge": "Premium Delivery Ops",
